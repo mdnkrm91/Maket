@@ -11,36 +11,20 @@
 
   </head>
 
-  <body>
+<body>
+  
+  <%= render "layouts/header" %>
 
-  <header class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-          <%= link_to "Maket" , root_path, class: "brand-logo" %>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li>link 1</li>
-           <li>link 1</li>
-        </ul>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+  
+  <main>
+    <%=  yield %>
+  </main>
+
+  <%= render "layouts/footer" %>
  
-      </div>
-    </nav>
-
-
-  </header>
-
-
-       <ul class="side-nav" id="mobile-demo">
-           <li>link 1</li>
-          <li>link 1</li>
-        </ul>
-
-
-   
-<%= link_to "About" , about_path %> 
-
-    <%= yield %>
-  </body>
+</body>
 
     <script>
         $(".button-collapse").sideNav();

@@ -29,7 +29,9 @@ gem 'jquery-rails'
 
 gem 'jquery-turbolinks'
 
-gem 'jquery'
+gem 'devise'
+
+
 
 
 group :development, :test do
